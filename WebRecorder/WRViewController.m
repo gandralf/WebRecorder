@@ -15,6 +15,7 @@
 @end
 
 @implementation WRViewController
+@synthesize webView = _webView;
 @synthesize playButton = _playButton;
 @synthesize stopButton = _stopButton;
 @synthesize recordButton = _recordButton;
@@ -69,12 +70,21 @@
     [super viewDidLoad];
     self.playButton.enabled = NO;
     self.stopButton.enabled = NO;
+    NSString *html = @"\
+        <ul>\
+        <li><a href=\"app://recordPressed\">Record</a></li>\
+        <li><a href=\"app://stopPressed\">Stop</a></li>\
+        <li><a href=\"app://playPressed\">Play</a></li>\
+        </ul>";
+    NSURL* baseURL = [[NSURL alloc] initWithString:@"http://google.com"];
+    [self.webView loadHTMLString:html baseURL:baseURL];
 }
 
 - (void)viewDidUnload {
     [self setRecordButton:nil];
     [self setStopButton:nil];
     [self setPlayButton:nil];
+    [self setWebView:nil];
     [super viewDidUnload];
 }
 
@@ -87,7 +97,7 @@
     }
 }
 
-- (IBAction)recordPressed:(UIButton *)sender {
+- (IBAction)recordPressed {
     if (!self.audioRecorder.recording) {
         self.playButton.enabled = NO;
         self.recordButton.enabled = NO;
@@ -97,7 +107,7 @@
     }
 }
 
-- (IBAction)stopPressed:(UIButton *)sender {
+- (IBAction)stopPressed {
     self.playButton.enabled = YES;
     self.recordButton.enabled = YES;
     self.stopButton.enabled = NO;
@@ -109,7 +119,7 @@
     }
 }
 
-- (IBAction)playPressed:(UIButton *)sender {
+- (IBAction)playPressed {
     if (!self.audioRecorder.recording) {
         self.stopButton.enabled = YES;
         self.recordButton.enabled = NO;
@@ -145,6 +155,23 @@
 -(void)audioRecorderEncodeErrorDidOccur:(AVAudioRecorder *)recorder
                                   error:(NSError *)error{
     NSLog(@"Encode Error occurred");
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    NSString *absoluteUrl = [[request URL] absoluteString];
+    if ([absoluteUrl isEqualToString:@"app://recordPressed"]) {
+        [self recordPressed];
+        return NO;
+    } else if ([absoluteUrl isEqualToString:@"app://stopPressed"]) {
+        [self stopPressed];
+        return NO;
+    } else if ([absoluteUrl isEqualToString:@"app://playPressed"]) {
+        [self playPressed];
+        return NO;
+    }
+
+    
+    return YES;
 }
 
 @end

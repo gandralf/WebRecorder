@@ -22,6 +22,7 @@
 		48B59EAB16081FA5006ABAC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48B59EA916081FA5006ABAC8 /* InfoPlist.strings */; };
 		48B59EAE16081FA5006ABAC8 /* WebRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B59EAD16081FA5006ABAC8 /* WebRecorderTests.m */; };
 		48B59EB916082790006ABAC8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59EB71608200B006ABAC8 /* AVFoundation.framework */; };
+		48B59EBC160830C4006ABAC8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 48B59EBB160830C4006ABAC8 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		48B59EAC16081FA5006ABAC8 /* WebRecorderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebRecorderTests.h; sourceTree = "<group>"; };
 		48B59EAD16081FA5006ABAC8 /* WebRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebRecorderTests.m; sourceTree = "<group>"; };
 		48B59EB71608200B006ABAC8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		48B59EBB160830C4006ABAC8 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = Resources/index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		48B59E7016081FA5006ABAC8 = {
 			isa = PBXGroup;
 			children = (
+				48B59EBA16083082006ABAC8 /* Resources */,
 				48B59E8516081FA5006ABAC8 /* WebRecorder */,
 				48B59EA616081FA5006ABAC8 /* WebRecorderTests */,
 				48B59E7E16081FA5006ABAC8 /* Frameworks */,
@@ -156,6 +159,14 @@
 				48B59EA916081FA5006ABAC8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48B59EBA16083082006ABAC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48B59EBB160830C4006ABAC8 /* index.html */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 				48B59E8A16081FA5006ABAC8 /* InfoPlist.strings in Resources */,
 				48B59E9316081FA5006ABAC8 /* MainStoryboard_iPhone.storyboard in Resources */,
 				48B59E9616081FA5006ABAC8 /* MainStoryboard_iPad.storyboard in Resources */,
+				48B59EBC160830C4006ABAC8 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
