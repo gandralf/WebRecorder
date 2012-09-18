@@ -21,6 +21,7 @@
 		48B59EA316081FA5006ABAC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59E8116081FA5006ABAC8 /* Foundation.framework */; };
 		48B59EAB16081FA5006ABAC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48B59EA916081FA5006ABAC8 /* InfoPlist.strings */; };
 		48B59EAE16081FA5006ABAC8 /* WebRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B59EAD16081FA5006ABAC8 /* WebRecorderTests.m */; };
+		48B59EB916082790006ABAC8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59EB71608200B006ABAC8 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		48B59EAA16081FA5006ABAC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		48B59EAC16081FA5006ABAC8 /* WebRecorderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebRecorderTests.h; sourceTree = "<group>"; };
 		48B59EAD16081FA5006ABAC8 /* WebRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebRecorderTests.m; sourceTree = "<group>"; };
+		48B59EB71608200B006ABAC8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B59EB916082790006ABAC8 /* AVFoundation.framework in Frameworks */,
 				48B59E8016081FA5006ABAC8 /* UIKit.framework in Frameworks */,
 				48B59E8216081FA5006ABAC8 /* Foundation.framework in Frameworks */,
 				48B59E8416081FA5006ABAC8 /* CoreGraphics.framework in Frameworks */,
@@ -102,6 +105,7 @@
 		48B59E7E16081FA5006ABAC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				48B59EB71608200B006ABAC8 /* AVFoundation.framework */,
 				48B59E7F16081FA5006ABAC8 /* UIKit.framework */,
 				48B59E8116081FA5006ABAC8 /* Foundation.framework */,
 				48B59E8316081FA5006ABAC8 /* CoreGraphics.framework */,

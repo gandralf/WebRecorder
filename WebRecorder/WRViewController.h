@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface WRViewController : UIViewController
+@interface WRViewController : UIViewController<AVAudioRecorderDelegate, AVAudioPlayerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopButton;
+@property (weak, nonatomic) IBOutlet UIButton *recordButton;
+- (IBAction)recordPressed:(UIButton *)sender;
+- (IBAction)stopPressed:(UIButton *)sender;
+- (IBAction)playPressed:(UIButton *)sender;
 
+-(void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder
+                          successfully:(BOOL)flag;
+
+-(void)audioRecorderEncodeErrorDidOccur:(AVAudioRecorder *)recorder
+                                  error:(NSError *)error;
 @end
