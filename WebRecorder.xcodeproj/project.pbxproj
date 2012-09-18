@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48B59E8016081FA5006ABAC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59E7F16081FA5006ABAC8 /* UIKit.framework */; };
+		48B59E8216081FA5006ABAC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59E8116081FA5006ABAC8 /* Foundation.framework */; };
+		48B59E8416081FA5006ABAC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59E8316081FA5006ABAC8 /* CoreGraphics.framework */; };
+		48B59E8A16081FA5006ABAC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48B59E8816081FA5006ABAC8 /* InfoPlist.strings */; };
+		48B59E8C16081FA5006ABAC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B59E8B16081FA5006ABAC8 /* main.m */; };
+		48B59E9016081FA5006ABAC8 /* WRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B59E8F16081FA5006ABAC8 /* WRAppDelegate.m */; };
+		48B59E9316081FA5006ABAC8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B59E9116081FA5006ABAC8 /* MainStoryboard_iPhone.storyboard */; };
+		48B59E9616081FA5006ABAC8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B59E9416081FA5006ABAC8 /* MainStoryboard_iPad.storyboard */; };
+		48B59E9916081FA5006ABAC8 /* WRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B59E9816081FA5006ABAC8 /* WRViewController.m */; };
+		48B59EA116081FA5006ABAC8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59EA016081FA5006ABAC8 /* SenTestingKit.framework */; };
+		48B59EA216081FA5006ABAC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59E7F16081FA5006ABAC8 /* UIKit.framework */; };
+		48B59EA316081FA5006ABAC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59E8116081FA5006ABAC8 /* Foundation.framework */; };
+		48B59EAB16081FA5006ABAC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48B59EA916081FA5006ABAC8 /* InfoPlist.strings */; };
+		48B59EAE16081FA5006ABAC8 /* WebRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B59EAD16081FA5006ABAC8 /* WebRecorderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48B59EA416081FA5006ABAC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B59E7216081FA5006ABAC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48B59E7A16081FA5006ABAC8;
+			remoteInfo = WebRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48B59E7B16081FA5006ABAC8 /* WebRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B59E7F16081FA5006ABAC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		48B59E8116081FA5006ABAC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		48B59E8316081FA5006ABAC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		48B59E8716081FA5006ABAC8 /* WebRecorder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebRecorder-Info.plist"; sourceTree = "<group>"; };
+		48B59E8916081FA5006ABAC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		48B59E8B16081FA5006ABAC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48B59E8D16081FA5006ABAC8 /* WebRecorder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebRecorder-Prefix.pch"; sourceTree = "<group>"; };
+		48B59E8E16081FA5006ABAC8 /* WRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRAppDelegate.h; sourceTree = "<group>"; };
+		48B59E8F16081FA5006ABAC8 /* WRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRAppDelegate.m; sourceTree = "<group>"; };
+		48B59E9216081FA5006ABAC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		48B59E9516081FA5006ABAC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		48B59E9716081FA5006ABAC8 /* WRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRViewController.h; sourceTree = "<group>"; };
+		48B59E9816081FA5006ABAC8 /* WRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRViewController.m; sourceTree = "<group>"; };
+		48B59E9F16081FA5006ABAC8 /* WebRecorderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebRecorderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B59EA016081FA5006ABAC8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		48B59EA816081FA5006ABAC8 /* WebRecorderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebRecorderTests-Info.plist"; sourceTree = "<group>"; };
+		48B59EAA16081FA5006ABAC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		48B59EAC16081FA5006ABAC8 /* WebRecorderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebRecorderTests.h; sourceTree = "<group>"; };
+		48B59EAD16081FA5006ABAC8 /* WebRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebRecorderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48B59E7816081FA5006ABAC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B59E8016081FA5006ABAC8 /* UIKit.framework in Frameworks */,
+				48B59E8216081FA5006ABAC8 /* Foundation.framework in Frameworks */,
+				48B59E8416081FA5006ABAC8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B59E9B16081FA5006ABAC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B59EA116081FA5006ABAC8 /* SenTestingKit.framework in Frameworks */,
+				48B59EA216081FA5006ABAC8 /* UIKit.framework in Frameworks */,
+				48B59EA316081FA5006ABAC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48B59E7016081FA5006ABAC8 = {
+			isa = PBXGroup;
+			children = (
+				48B59E8516081FA5006ABAC8 /* WebRecorder */,
+				48B59EA616081FA5006ABAC8 /* WebRecorderTests */,
+				48B59E7E16081FA5006ABAC8 /* Frameworks */,
+				48B59E7C16081FA5006ABAC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48B59E7C16081FA5006ABAC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48B59E7B16081FA5006ABAC8 /* WebRecorder.app */,
+				48B59E9F16081FA5006ABAC8 /* WebRecorderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48B59E7E16081FA5006ABAC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48B59E7F16081FA5006ABAC8 /* UIKit.framework */,
+				48B59E8116081FA5006ABAC8 /* Foundation.framework */,
+				48B59E8316081FA5006ABAC8 /* CoreGraphics.framework */,
+				48B59EA016081FA5006ABAC8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48B59E8516081FA5006ABAC8 /* WebRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				48B59E8E16081FA5006ABAC8 /* WRAppDelegate.h */,
+				48B59E8F16081FA5006ABAC8 /* WRAppDelegate.m */,
+				48B59E9116081FA5006ABAC8 /* MainStoryboard_iPhone.storyboard */,
+				48B59E9416081FA5006ABAC8 /* MainStoryboard_iPad.storyboard */,
+				48B59E9716081FA5006ABAC8 /* WRViewController.h */,
+				48B59E9816081FA5006ABAC8 /* WRViewController.m */,
+				48B59E8616081FA5006ABAC8 /* Supporting Files */,
+			);
+			path = WebRecorder;
+			sourceTree = "<group>";
+		};
+		48B59E8616081FA5006ABAC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48B59E8716081FA5006ABAC8 /* WebRecorder-Info.plist */,
+				48B59E8816081FA5006ABAC8 /* InfoPlist.strings */,
+				48B59E8B16081FA5006ABAC8 /* main.m */,
+				48B59E8D16081FA5006ABAC8 /* WebRecorder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48B59EA616081FA5006ABAC8 /* WebRecorderTests */ = {
+			isa = PBXGroup;
+			children = (
+				48B59EAC16081FA5006ABAC8 /* WebRecorderTests.h */,
+				48B59EAD16081FA5006ABAC8 /* WebRecorderTests.m */,
+				48B59EA716081FA5006ABAC8 /* Supporting Files */,
+			);
+			path = WebRecorderTests;
+			sourceTree = "<group>";
+		};
+		48B59EA716081FA5006ABAC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48B59EA816081FA5006ABAC8 /* WebRecorderTests-Info.plist */,
+				48B59EA916081FA5006ABAC8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48B59E7A16081FA5006ABAC8 /* WebRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B59EB116081FA5006ABAC8 /* Build configuration list for PBXNativeTarget "WebRecorder" */;
+			buildPhases = (
+				48B59E7716081FA5006ABAC8 /* Sources */,
+				48B59E7816081FA5006ABAC8 /* Frameworks */,
+				48B59E7916081FA5006ABAC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebRecorder;
+			productName = WebRecorder;
+			productReference = 48B59E7B16081FA5006ABAC8 /* WebRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48B59E9E16081FA5006ABAC8 /* WebRecorderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B59EB416081FA5006ABAC8 /* Build configuration list for PBXNativeTarget "WebRecorderTests" */;
+			buildPhases = (
+				48B59E9A16081FA5006ABAC8 /* Sources */,
+				48B59E9B16081FA5006ABAC8 /* Frameworks */,
+				48B59E9C16081FA5006ABAC8 /* Resources */,
+				48B59E9D16081FA5006ABAC8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48B59EA516081FA5006ABAC8 /* PBXTargetDependency */,
+			);
+			name = WebRecorderTests;
+			productName = WebRecorderTests;
+			productReference = 48B59E9F16081FA5006ABAC8 /* WebRecorderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48B59E7216081FA5006ABAC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WR;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = Hibu;
+			};
+			buildConfigurationList = 48B59E7516081FA5006ABAC8 /* Build configuration list for PBXProject "WebRecorder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 48B59E7016081FA5006ABAC8;
+			productRefGroup = 48B59E7C16081FA5006ABAC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48B59E7A16081FA5006ABAC8 /* WebRecorder */,
+				48B59E9E16081FA5006ABAC8 /* WebRecorderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48B59E7916081FA5006ABAC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B59E8A16081FA5006ABAC8 /* InfoPlist.strings in Resources */,
+				48B59E9316081FA5006ABAC8 /* MainStoryboard_iPhone.storyboard in Resources */,
+				48B59E9616081FA5006ABAC8 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B59E9C16081FA5006ABAC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B59EAB16081FA5006ABAC8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48B59E9D16081FA5006ABAC8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48B59E7716081FA5006ABAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B59E8C16081FA5006ABAC8 /* main.m in Sources */,
+				48B59E9016081FA5006ABAC8 /* WRAppDelegate.m in Sources */,
+				48B59E9916081FA5006ABAC8 /* WRViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B59E9A16081FA5006ABAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B59EAE16081FA5006ABAC8 /* WebRecorderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48B59EA516081FA5006ABAC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48B59E7A16081FA5006ABAC8 /* WebRecorder */;
+			targetProxy = 48B59EA416081FA5006ABAC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48B59E8816081FA5006ABAC8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B59E8916081FA5006ABAC8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		48B59E9116081FA5006ABAC8 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B59E9216081FA5006ABAC8 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		48B59E9416081FA5006ABAC8 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B59E9516081FA5006ABAC8 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		48B59EA916081FA5006ABAC8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B59EAA16081FA5006ABAC8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48B59EAF16081FA5006ABAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48B59EB016081FA5006ABAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48B59EB216081FA5006ABAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebRecorder/WebRecorder-Prefix.pch";
+				INFOPLIST_FILE = "WebRecorder/WebRecorder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		48B59EB316081FA5006ABAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebRecorder/WebRecorder-Prefix.pch";
+				INFOPLIST_FILE = "WebRecorder/WebRecorder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		48B59EB516081FA5006ABAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WebRecorder.app/WebRecorder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebRecorder/WebRecorder-Prefix.pch";
+				INFOPLIST_FILE = "WebRecorderTests/WebRecorderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		48B59EB616081FA5006ABAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WebRecorder.app/WebRecorder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebRecorder/WebRecorder-Prefix.pch";
+				INFOPLIST_FILE = "WebRecorderTests/WebRecorderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48B59E7516081FA5006ABAC8 /* Build configuration list for PBXProject "WebRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B59EAF16081FA5006ABAC8 /* Debug */,
+				48B59EB016081FA5006ABAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48B59EB116081FA5006ABAC8 /* Build configuration list for PBXNativeTarget "WebRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B59EB216081FA5006ABAC8 /* Debug */,
+				48B59EB316081FA5006ABAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		48B59EB416081FA5006ABAC8 /* Build configuration list for PBXNativeTarget "WebRecorderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B59EB516081FA5006ABAC8 /* Debug */,
+				48B59EB616081FA5006ABAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48B59E7216081FA5006ABAC8 /* Project object */;
+}
