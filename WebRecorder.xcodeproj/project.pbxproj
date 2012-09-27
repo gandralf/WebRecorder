@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4894FE971614EBBE0025EB4F /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = 4894FE961614EBBE0025EB4F /* index.css */; };
 		48B59E8016081FA5006ABAC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59E7F16081FA5006ABAC8 /* UIKit.framework */; };
 		48B59E8216081FA5006ABAC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59E8116081FA5006ABAC8 /* Foundation.framework */; };
 		48B59E8416081FA5006ABAC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59E8316081FA5006ABAC8 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 		48B59EAE16081FA5006ABAC8 /* WebRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B59EAD16081FA5006ABAC8 /* WebRecorderTests.m */; };
 		48B59EB916082790006ABAC8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B59EB71608200B006ABAC8 /* AVFoundation.framework */; };
 		48B59EBC160830C4006ABAC8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 48B59EBB160830C4006ABAC8 /* index.html */; };
+		48E329AF160987DA006E7258 /* WRUserMediaAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E329AE160987DA006E7258 /* WRUserMediaAdapter.m */; };
+		48E329B31609891E006E7258 /* WRUserMediaAdapterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E329B21609891E006E7258 /* WRUserMediaAdapterTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4894FE961614EBBE0025EB4F /* index.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = index.css; path = Resources/index.css; sourceTree = "<group>"; };
 		48B59E7B16081FA5006ABAC8 /* WebRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B59E7F16081FA5006ABAC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		48B59E8116081FA5006ABAC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +62,10 @@
 		48B59EAD16081FA5006ABAC8 /* WebRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebRecorderTests.m; sourceTree = "<group>"; };
 		48B59EB71608200B006ABAC8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		48B59EBB160830C4006ABAC8 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = Resources/index.html; sourceTree = "<group>"; };
+		48E329AD160987DA006E7258 /* WRUserMediaAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRUserMediaAdapter.h; sourceTree = "<group>"; };
+		48E329AE160987DA006E7258 /* WRUserMediaAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRUserMediaAdapter.m; sourceTree = "<group>"; };
+		48E329B11609891E006E7258 /* WRUserMediaAdapterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRUserMediaAdapterTests.h; sourceTree = "<group>"; };
+		48E329B21609891E006E7258 /* WRUserMediaAdapterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRUserMediaAdapterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,8 @@
 				48B59E9716081FA5006ABAC8 /* WRViewController.h */,
 				48B59E9816081FA5006ABAC8 /* WRViewController.m */,
 				48B59E8616081FA5006ABAC8 /* Supporting Files */,
+				48E329AD160987DA006E7258 /* WRUserMediaAdapter.h */,
+				48E329AE160987DA006E7258 /* WRUserMediaAdapter.m */,
 			);
 			path = WebRecorder;
 			sourceTree = "<group>";
@@ -148,6 +158,8 @@
 				48B59EAC16081FA5006ABAC8 /* WebRecorderTests.h */,
 				48B59EAD16081FA5006ABAC8 /* WebRecorderTests.m */,
 				48B59EA716081FA5006ABAC8 /* Supporting Files */,
+				48E329B11609891E006E7258 /* WRUserMediaAdapterTests.h */,
+				48E329B21609891E006E7258 /* WRUserMediaAdapterTests.m */,
 			);
 			path = WebRecorderTests;
 			sourceTree = "<group>";
@@ -165,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				48B59EBB160830C4006ABAC8 /* index.html */,
+				4894FE961614EBBE0025EB4F /* index.css */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -245,6 +258,7 @@
 				48B59E9316081FA5006ABAC8 /* MainStoryboard_iPhone.storyboard in Resources */,
 				48B59E9616081FA5006ABAC8 /* MainStoryboard_iPad.storyboard in Resources */,
 				48B59EBC160830C4006ABAC8 /* index.html in Resources */,
+				4894FE971614EBBE0025EB4F /* index.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +296,7 @@
 				48B59E8C16081FA5006ABAC8 /* main.m in Sources */,
 				48B59E9016081FA5006ABAC8 /* WRAppDelegate.m in Sources */,
 				48B59E9916081FA5006ABAC8 /* WRViewController.m in Sources */,
+				48E329AF160987DA006E7258 /* WRUserMediaAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B59EAE16081FA5006ABAC8 /* WebRecorderTests.m in Sources */,
+				48E329B31609891E006E7258 /* WRUserMediaAdapterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +481,7 @@
 				48B59EB316081FA5006ABAC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48B59EB416081FA5006ABAC8 /* Build configuration list for PBXNativeTarget "WebRecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +490,7 @@
 				48B59EB616081FA5006ABAC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -70,14 +70,11 @@
     [super viewDidLoad];
     self.playButton.enabled = NO;
     self.stopButton.enabled = NO;
-    NSString *html = @"\
-        <ul>\
-        <li><a href=\"app://recordPressed\">Record</a></li>\
-        <li><a href=\"app://stopPressed\">Stop</a></li>\
-        <li><a href=\"app://playPressed\">Play</a></li>\
-        </ul>";
-    NSURL* baseURL = [[NSURL alloc] initWithString:@"http://google.com"];
-    [self.webView loadHTMLString:html baseURL:baseURL];
+    
+    NSString* localFilePath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+    NSURLRequest* urlRequest = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:localFilePath]];
+    
+    [self.webView loadRequest:urlRequest];
 }
 
 - (void)viewDidUnload {

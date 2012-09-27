@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+<link href="index.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+    recorderAPI = {
+        adapt: function(fileInput) {
+            fileInput.onclick = function() {
+                recorderAPI.currentFileInput = fileInput;
+                recorderAPI.showRecorder();
+                
+                return false;
+            }
+        },
+
+        showRecorder: function(input) {
+            self.recorderDiv.style.display = 'block';
+        },
+        
+        hideRecorder: function() {
+            self.recorderDiv.style.display = 'none';
+            console.log(self.currentFileInput);
+        },
+        
+        setup: function() {
+            var inputs = document.getElementsByTagName('input');
+            for(var i=0; i < inputs.length; i++) {
+                var input = inputs[i];
+                if (input.type == 'file' && input.accept == 'audio/*;capture=microphone') {
+                    this.adapt(input);
+                }
+            }
+            
+            this.recorderDiv = document.getElementById('recorderDiv');
+
+            var hideBtn = document.querySelector('#recorderDiv input');
+            hideBtn.onclick = this.hideRecorder;
+        }
+    };
+    
+    window.onload = function() {
+        recorderAPI.setup();
+    };
+</script>
 </head>
 <body>
-    <ul>
-        <li><a href="app://recordPressed">Record</a></li>
-        <li><a href="app://stopPressed">Stop</a></li>
-        <li><a href="app://playPressed">Play</a></li>
-    </ul>
+    <input type="file" accept="audio/*;capture=microphone" />
+
+    <div id="recorderDiv">
+        <ul>
+            <li><a href="app://recordPressed">Record</a></li>
+            <li><a href="app://stopPressed">Stop</a></li>
+            <li><a href="app://playPressed">Play</a></li>
+        </ul>
+        <input type="button" value="Done" />
+    </div>
 </body>
 </html>
